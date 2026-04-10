@@ -22,7 +22,7 @@ const FoodDetailPage = async ({ params }) => {
             <h2 className="text-2xl capitalize">{"approximate_nutrition_per_serving".replace(/_/g,' ')}:</h2>
             <ul className="list-disc list-inside">
                 {
-                    Object.entries(approximate_nutrition_per_serving).map(([key,value], index)=> <li key={index}>{key}: {value}</li>)
+                    Object.entries(approximate_nutrition_per_serving).map(([key,value], index)=> <li key={index}><span className="capitalize">{key}</span> : {value}</li>)
                 }
             </ul>
 
